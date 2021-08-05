@@ -3,7 +3,7 @@
 
 Background::Background()
 {
-	TextureManager::Instance().load("../Assets/textures/star_background.png", "background");
+	TextureManager::Instance().load("../Assets/textures/A3_TileMap.png", "background");
 	auto size = TextureManager::Instance().getTextureSize("background");
 	setWidth(size.x);
 	setHeight(size.y);
@@ -22,7 +22,7 @@ void Background::draw()
 	const auto y = getTransform()->position.y;
 
 	// draw the background
-	TextureManager::Instance().draw("background", x, y, 0, 255, true);
+	TextureManager::Instance().draw("background", x, y, 0, 255, false);
 }
 
 void Background::update()
