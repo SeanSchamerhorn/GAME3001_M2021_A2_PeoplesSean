@@ -97,7 +97,7 @@ void PlayScene::start()
 	// Add Background to Scene
 	m_pBackground = new Background();
 	m_pBackground->getTransform()->position = glm::vec2(0.0f, 0.0f);
-	//addChild(m_pBackground);
+	addChild(m_pBackground);
 	
 	// Load music
 	SoundManager::Instance().load("../Assets/audio/moonlight_sonata.mp3", "bgMusic", SOUND_MUSIC);
@@ -132,8 +132,8 @@ void PlayScene::start()
 
 	m_computeTileCosts();
 
-	//m_buildRoids();
-	//m_spawnRoids();
+	m_buildRoids();
+	m_spawnRoids();
 
 	// Add instruction Labels
 	const SDL_Color red{ 255,0,0,255 };

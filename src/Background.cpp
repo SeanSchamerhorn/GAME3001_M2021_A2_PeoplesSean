@@ -3,7 +3,7 @@
 
 Background::Background()
 {
-	TextureManager::Instance().load("../Assets/textures/A3_TileMap.png", "background");
+	TextureManager::Instance().load("../Assets/textures/star_background.png", "background");
 	auto size = TextureManager::Instance().getTextureSize("background");
 	setWidth(size.x);
 	setHeight(size.y);
